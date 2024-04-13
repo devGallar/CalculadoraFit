@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Calculadora Fit</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>CalculadoraFit</h1>
+<h2>Calcular calorías diarias</h2>
+<div class="container">
+  <div class="container-questions">
+    <h4>¿Cuál es tu género?</h4>
+    <div class="content">
+      <div class="gender-options">
+        <img src="img/man.png" alt="" />
+        <input type="button" value="Hombre" />
+      </div>
+
+      <div class="gender-options">
+        <img src="img/woman.png" alt="" />
+        <input type="button" value="Mujer" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container-questions">
+    <h4>¿Cuántos años tienes?</h4>
+    <div class="content">
+      <input type="number" name="age" id="ageInput" placeholder="21" />
+      <label for="age">años</label>
+    </div>
+  </div>
+
+  <div class="container-questions">
+    <h4>¿Cuánto pesas?</h4>
+    <div class="content">
+      <input type="number" name="weight" id="weightInput" placeholder="80" />
+      <label for="weight">kg</label>
+    </div>
+  </div>
+
+  <div class="container-questions">
+    <h4>¿Cuánto mides?</h4>
+    <div class="content">
+      <input type="number" name="height" id="heightInput" placeholder="170" />
+      <label for="height">cm</label>
+    </div>
+  </div>
+
+  <div class="container-questions">
+    <h4>¿Qué tan activo eres durante el día?</h4>
+    <div class="content">
+      <div class="activity">
+        <img src="img/sentado.png" alt="" srcset="" />
+        <input type="button" value="No muy activo" />
+        <span>Sobre todo sentado (ej. trabajo de oficina)</span>
+      </div>
+      <div class="activity">
+        <img src="img/caminando.png" alt="" srcset="" />
+        <input type="button" value="Medianamente activo" />
+        <span>Sobre todo de pie (ej. cajero, profesor)</span>
+      </div>
+      <div class="activity">
+        <img src="img/corriendo.png" alt="" srcset="" />
+        <input type="button" value="Activo" />
+        <span>Sobre todo andando (ej. vendedor, camarero)</span>
+      </div>
+      <div class="activity">
+        <img src="img/pesas.png" alt="" srcset="" />
+        <input type="button" value="Muy activo" />
+        <span>Trabajos físicos (ej. construcción)</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
