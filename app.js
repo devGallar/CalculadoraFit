@@ -133,7 +133,7 @@ function calcularCalorias(gender, age, weight, height, activity) {
   }
 
   const loseWeigth = Math.round(totalCalorias - 500);
-  const gainWeigth = Math.round(totalCalorias - 500);
+  const gainWeigth = Math.round(totalCalorias + 500);
 
   const result = [bmr, totalCalorias, gainWeigth, loseWeigth];
 
