@@ -159,3 +159,10 @@ input[type="submit"]{
     display: block;
     padding-top: 0.5rem;
 }
+
+#error-genero,#error-activity{
+    display: none;
+}
+.error{
+    color: red;
+}

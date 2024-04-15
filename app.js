@@ -6,6 +6,38 @@ document.addEventListener("DOMContentLoaded", function () {
   const womanInput = document.getElementById("woman");
   const buttons = document.querySelectorAll('.activity input[type="button"]');
 
+
+  function generoValid(){
+    const mensajeError = document.getElementById("error-genero")
+    if(manInput.classList.contains("selected") || womanInput.classList.contains("selected") ){
+      mensajeError.style.display = 'none'
+      return true
+    }else {
+      mensajeError.style.display = 'block'
+      return false
+      
+    }
+  }
+  function actividadValid(){
+    const mensajeError = document.getElementById("error-activity")
+
+    let algunoSeleccionado = false;
+
+    buttons.forEach(button => {
+      if (button.classList.contains('selected')) {
+        algunoSeleccionado = true;
+      }
+    });
+
+    if (algunoSeleccionado) {
+      mensajeError.style.display = 'none'
+      return true
+    } else {
+      mensajeError.style.display = 'block'
+      return false
+    }
+  }
+
   function cambiarColorGenero(event) {
     manInput.classList.remove("selected");
     womanInput.classList.remove("selected");
@@ -66,7 +98,11 @@ form.addEventListener("submit", function (event) {
   const height = document.getElementById("heightInput").value;
   const selectedActivityButton = document.querySelector('.activity input[type="button"].selected');
   const activity = selectedActivityButton ? selectedActivityButton.value : "";
-  mostrarresultados(calcularCalorias(gender, age, weight, height, activity));
+  if(generoValid() && actividadValid()){
+    mostrarresultados(calcularCalorias(gender, age, weight, height, activity));
+  }
+  
+  
 });
 
 
