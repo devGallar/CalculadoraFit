@@ -166,3 +166,44 @@ input[type="submit"]{
 .error{
     color: red;
 }
+
+
+@media(max-width: 768px) {
+   .container{
+    display: block;
+   }
+   .container-questions{
+    width: calc(80% - 10px);
+   }
+   .container-questions:last-child{
+    width: calc(80% - 10px);
+   }
+   .content {
+    display: block;
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+  .activity{
+    gap: 0.5rem;
+  }
+   
+  }
+  @media(max-width: 450px) {
+    .container-questions{
+     width: 100%;
+     border: none;
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+    .container-questions:last-child{
+        padding-left: 20px;
+        padding-right: 20px;
+     width: 100%;
+    }
+    .result{
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+   }
