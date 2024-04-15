@@ -47,7 +47,7 @@ h4{
     margin: 0 auto;
     margin-top: 1rem;
     width: calc(50% - 10px);
-    max-height: 240px;
+    max-height: 640px;
     min-height: 240px;
 }
 .container-questions h4 {
@@ -140,4 +140,22 @@ input[type="submit"]{
     padding-top: 3rem;
     padding-bottom: 3rem;
     gap: 1rem;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #dcdcdc;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 900px;
+    padding: 1rem;
+}
+.result span{
+    display: block;
+    padding-top: 0.5rem;
 }

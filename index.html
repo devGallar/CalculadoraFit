@@ -31,7 +31,7 @@
     <div class="container-questions">
       <h4>¿Cuántos años tienes?</h4>
       <div class="content">
-        <input type="number" name="age" id="ageInput" placeholder="21" />
+        <input type="number" name="age" id="ageInput" placeholder="21" required/>
         <label for="age">años</label>
       </div>
     </div>
@@ -39,7 +39,7 @@
     <div class="container-questions">
       <h4>¿Cuánto pesas?</h4>
       <div class="content">
-        <input type="number" name="weight" id="weightInput" placeholder="80" />
+        <input type="number" name="weight" id="weightInput" placeholder="80" required/>
         <label for="weight">kg</label>
       </div>
     </div>
@@ -47,7 +47,7 @@
     <div class="container-questions">
       <h4>¿Cuánto mides?</h4>
       <div class="content">
-        <input type="number" name="height" id="heightInput" placeholder="170" />
+        <input type="number" name="height" id="heightInput" placeholder="170" required/>
         <label for="height">cm</label>
       </div>
     </div>
@@ -79,7 +79,17 @@
     </div>
   </div>
   <input type="submit" value="Calcular tus calorías diarias">
+  <div class="result">
+    <h4>Resultados</h4>
+    <article>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </article>
+  </div>
 </form>
+
 
 <script src="app.js"></script>
 </body>
